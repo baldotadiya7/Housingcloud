@@ -3,8 +3,8 @@ SELECT
     CONCAT(p.firstName, ' ', p.lastName) AS name,
     p.email,
     p.dob,
-    LEFT(p.address, CHARINDEX(',', p.address) - 1) AS address1,
-    NULL AS address2, -- No address2 data provided
+    p.address AS address1,
+    LEFT(p.address, CHARINDEX(',', p.address) - 1) AS address2, -- Address2 is just the street part
     LTRIM(RTRIM(SUBSTRING(p.address, CHARINDEX(',', p.address) + 1, CHARINDEX(',', p.address, CHARINDEX(',', p.address) + 1) - CHARINDEX(',', p.address) - 1))) AS city,
     RIGHT(LTRIM(RTRIM(SUBSTRING(p.address, CHARINDEX(',', p.address) + 1, LEN(p.address)))), 2) AS state,
     NULL AS zip, -- Assuming ZIP code is not provided
