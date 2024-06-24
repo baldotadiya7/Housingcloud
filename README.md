@@ -107,13 +107,9 @@ The final CSV includes the following headers, each with specified data types and
 - Address Parsing: Addresses are parsed into multiple components where available. Only complete addresses are saved in address1.
 - Date Standardization: All dates of birth are formatted to the standard YYYY-MM-DD format.
 
-
-#### Error Handling
-- Incomplete Data: Rows with missing necessary fields (e.g., personId or bedId) are logged and excluded from the final output. These cases are documented in errors.log.
-- 
 #### Instructions for Running the Script
-Ensure all CSV files are placed in the designated input directory.
-Run generate_csv.sql in your SQL environment.
-Check output.csv for the final output and errors.log for any processing errors.
+- Ensure all CSV files are placed in the designated input directory.
+- Run generate_csv.sql in your SQL environment.
+- Check output.csv for the final output and errors.log for any processing errors.
 
 
