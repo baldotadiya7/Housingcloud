@@ -109,13 +109,13 @@ The final CSV includes the following headers, each with specified data types and
 
 #### Instructions for Running the Script
 - Ensure all CSV files are placed in the designated input directory.
-- Run finalcsvQ2.sql in your SQL environment.
-- Check finalcsvQ2.csv for the final output and errors.log for any processing errors.
+- Run generate.sql in your SQL environment.
+- Check generate.csv for the final output.
 
 
 ## Instructions for Running the Project
 - Clone the repositoty onto you local computer(Azure Data Studio or any other tool that works best).
 - Q1 project in the Housingcloud folder is basically the generation of different tables that are required for the Room Reservation and there is also a stored procedure for room booking that I have included.
-- Q2 project in the Housingcloud folder is required for the generation of the csv file that was asked for.
+- Q2 project in the Housingcloud folder is required for the generation of the csv file that was asked for (generate.csv)
 
 
