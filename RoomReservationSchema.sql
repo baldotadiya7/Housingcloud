@@ -1,9 +1,9 @@
--- Create the Hotel Reservation System Database
-CREATE DATABASE HotelReservationSystem;
+-- Create the Room Reservation System Database
+CREATE DATABASE RoomReservationSystem;
 GO
 
 -- Switch context to the new database
-USE HotelReservationSystem;
+USE RoomReservationSystem;
 GO
 
 -- Create Hotels Table
