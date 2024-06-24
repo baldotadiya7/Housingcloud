@@ -6,7 +6,7 @@
 #### Overview
 This schema is designed to support a global hotel chain's operations, focusing on room reservations, customer management, and payment processing. The structure ensures scalability and maintainability, essential for handling multiple hotels across various locations.
 
-##### Schema Description
+#### Schema Description
 
 1. Hotels
 
@@ -61,15 +61,19 @@ amount: Amount paid.
 currency: Currency in which payment was made.
 payment_date: Date the payment was processed.
 payment_method: Method of payment (e.g., credit card, cash).
-Scalability and Maintainability
-This schema is designed to be both scalable and maintainable:
+
+(Scalability and Maintainability
+This schema is designed to be both scalable and maintainable)
 
 ###### Scalability: 
 Allows handling an increasing amount of data as the hotel chain grows. Each table is designed to facilitate the addition of new records without affecting the performance of queries significantly.
 ###### Maintainability: 
 Changes to the database (such as adding new features or room types) can be managed with minimal modifications to the existing structure.
 
-Use Cases
-Reservation Management: Efficiently create, update, and manage reservations.
-Customer Relationship Management: Track customer data and their reservation history.
-Financial Transactions: Handle payments linked to reservations, including multi-currency support for global operations.
+#### Use Cases
+###### Reservation Management: 
+Efficiently create, update, and manage reservations.
+###### Customer Relationship Management: 
+Track customer data and their reservation history.
+###### Financial Transactions: 
+Handle payments linked to reservations, including multi-currency support for global operations.
