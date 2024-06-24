@@ -1,4 +1,4 @@
-USE HotelReservationSystem;
+USE RoomReservationSystem;
 GO
 
 CREATE PROCEDURE MakeReservation
