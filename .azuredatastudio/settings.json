@@ -1,5 +1,7 @@
 {
     "dataworkspace.excludedProjects": [
-        "HousingCloud/HousingCloud.sqlproj"
+        "HousingCloud/HousingCloud.sqlproj",
+        "HousingCloud/Q2Database/Q2Database.sqlproj",
+        "HousingCloud/DatabaseProjectRoomReservationSystem/DatabaseProjectRoomReservationSystem.sqlproj"
     ]
 }
