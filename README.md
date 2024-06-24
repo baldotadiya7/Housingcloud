@@ -6,6 +6,8 @@
 #### Overview
 This schema is designed to support a global hotel chain's operations, focusing on room reservations, customer management, and payment processing. The structure ensures scalability and maintainability, essential for handling multiple hotels across various locations.
 
+![SchemaDesignHotelReservation](https://github.com/baldotadiya7/Housingcloud/assets/114612015/525b2b28-6bfe-4e62-9833-bad83384a9ff)
+
 #### Schema Description
 
 ##### 1. Hotels
