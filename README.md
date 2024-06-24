@@ -1,66 +1,66 @@
 # Housingcloud
 
 
-### Q1 Hotel Reservation System Database Schema
+### Q1 Room Reservation System Database Schema
 
 #### Overview
 This schema is designed to support a global hotel chain's operations, focusing on room reservations, customer management, and payment processing. The structure ensures scalability and maintainability, essential for handling multiple hotels across various locations.
 
 #### Schema Description
 
-1. Hotels
+##### 1. Hotels
 
-hotel_id: Primary key, uniquely identifies each hotel.
-name: Name of the hotel.
-address: Address of the hotel.
-phone_number: Contact number for the hotel.
-email: Email address for hotel communications.
-rating: The hotel's rating.
-currency: The primary currency used for transactions at the hotel.
+- hotel_id: Primary key, uniquely identifies each hotel.
+- name: Name of the hotel.
+- address: Address of the hotel.
+- phone_number: Contact number for the hotel.
+- email: Email address for hotel communications.
+- rating: The hotel's rating.
+- currency: The primary currency used for transactions at the hotel.
 
-2. Rooms
+##### 2. Rooms
 
-room_id: Primary key, uniquely identifies each room within a hotel.
-hotel_id: Foreign key, references Hotels. Identifies the hotel to which the room belongs.
-type: Type of the room (e.g., single, double, suite).
-number: Room number or identifier.
-price: Price per night.
-currency: Currency in which the price is calculated, to accommodate hotels in different countries.
+- room_id: Primary key, uniquely identifies each room within a hotel.
+- hotel_id: Foreign key, references Hotels. Identifies the hotel to which the room belongs.
+- type: Type of the room (e.g., single, double, suite).
+- number: Room number or identifier.
+- price: Price per night.
+- currency: Currency in which the price is calculated, to accommodate hotels in different countries.
 
-3. RoomFeatures
+##### 3. RoomFeatures
 
-feature_id: Primary key, uniquely identifies a feature.
-description: Describes the room feature (e.g., sea view, balcony).
+- feature_id: Primary key, uniquely identifies a feature.
+- description: Describes the room feature (e.g., sea view, balcony).
 
-4. RoomFeatureLinks
+##### 4. RoomFeatureLinks
 
-room_id: Foreign key, references Rooms. Links features to specific rooms.
-feature_id: Foreign key, references RoomFeatures.
+- room_id: Foreign key, references Rooms. Links features to specific rooms.
+- feature_id: Foreign key, references RoomFeatures.
 
-5. Customers
+##### 5. Customers
 
-customer_id: Primary key, uniquely identifies each customer.
-name: Customer's full name.
-email: Customer's email address.
-phone_number: Customer's contact number.
+- customer_id: Primary key, uniquely identifies each customer.
+- name: Customer's full name.
+- email: Customer's email address.
+- phone_number: Customer's contact number.
 
-6. Reservations
+##### 6. Reservations
 
-reservation_id: Primary key, uniquely identifies each reservation.
-room_id: Foreign key, references Rooms.
-customer_id: Foreign key, references Customers.
-start_date: Reservation start date.
-end_date: Reservation end date.
-status: Current status of the reservation (e.g., confirmed, canceled).
+- reservation_id: Primary key, uniquely identifies each reservation.
+- room_id: Foreign key, references Rooms.
+- customer_id: Foreign key, references Customers.
+- start_date: Reservation start date.
+- end_date: Reservation end date.
+- status: Current status of the reservation (e.g., confirmed, canceled).
 
-7. Payments
+##### 7. Payments
 
-payment_id: Primary key, uniquely identifies each payment.
-reservation_id: Foreign key, references Reservations.
-amount: Amount paid.
-currency: Currency in which payment was made.
-payment_date: Date the payment was processed.
-payment_method: Method of payment (e.g., credit card, cash).
+- payment_id: Primary key, uniquely identifies each payment.
+- reservation_id: Foreign key, references Reservations.
+- amount: Amount paid.
+- currency: Currency in which payment was made.
+- payment_date: Date the payment was processed.
+- payment_method: Method of payment (e.g., credit card, cash).
 
 (Scalability and Maintainability
 This schema is designed to be both scalable and maintainable)
