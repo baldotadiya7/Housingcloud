@@ -1,0 +1,5 @@
+{
+    "dataworkspace.excludedProjects": [
+        "HousingCloud/HousingCloud.sqlproj"
+    ]
+}
